@@ -34,8 +34,8 @@ def send_mail(body, env, status, to):
     """
 
     # cmd=f"echo {body} | mailx -s 'Prometheus Monitoring Alert' " + "-c a@test.mail " + to
-    # cmd=f"echo {body} | mailx -r euiyoung.hwang@gxo.com -s 'Prometheus Monitoring Alert' " + "-c euiyoung.hwang@gxo.com " + to
-    cmd=f"echo {body} | mailx -s 'Prometheus Monitoring Alert' " + "-c euiyoung.hwang@gxo.com " + "5129450007@txt.att.net"
+    # cmd=f"echo {body} | mailx -r a@xyz.com -s 'Prometheus Monitoring Alert' " + "-c ea@xyz.com " + to
+    cmd=f"echo {body} | mailx -s 'Prometheus Monitoring Alert' " + "-c a@xyz.com " + "1@txt.att.net"
     print(f"# {cmd}")
 
     try:

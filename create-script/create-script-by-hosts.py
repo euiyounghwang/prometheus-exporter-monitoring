@@ -251,7 +251,7 @@ def export_es_configuration(hosts_dicts):
         es_configuration = defaultdict()
         for k, v in hosts_list_for_logstash_dict.items():
             es_configuration.update({v : {
-                "mail_list" : "euiyoung.hwang@gxo.com",
+                "mail_list" : "a@xyz.com",
                 "env": k,
                 "is_mailing" : True
             }})
