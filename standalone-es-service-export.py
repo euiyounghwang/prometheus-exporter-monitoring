@@ -1986,7 +1986,7 @@ def send_mail(body, host, env, status_dict, to, cc, _type):
         """
 
         ''' using smtp'''
-        me = "root@gxo.com"
+        me = os.environ["mail_sender"]
         you = user_list
 
         msg = MIMEMultipart('alternative')
