@@ -1986,7 +1986,7 @@ def send_mail(body, host, env, status_dict, to, cc, _type):
         """
 
         ''' using smtp'''
-        me = os.environ["mail_sender"]
+        me = os.environ["MAIL_SENDER"]
         you = user_list
 
         msg = MIMEMultipart('alternative')
